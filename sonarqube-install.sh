@@ -98,7 +98,7 @@ server{
     proxy_buffer_size 128k;
 
     location / {
-        proxy_pass  http://127.0.0.1:9000;
+        proxy_pass  http://54.200.245.68:9000;
         proxy_next_upstream error timeout invalid_header http_500 http_502 http_503 http_504;
         proxy_redirect off;
               
